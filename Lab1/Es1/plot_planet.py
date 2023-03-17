@@ -5,12 +5,18 @@ import imageio
  plot_planet - returns a 3d sphere with all the planets belong to the solar system and the sun. 
  
  Prototype: plot_planet('planet', ax)
+ 
+ Input:
+        'planet' [string] can be one of the 9 planets or the sun. Notice that the name must be all in small letters, 
+        for example 'earth' or 'venus'
+        ax [1 x 1] number of the axis of the plot
+        
+Output:
+        3D sphere representing the planet centred in the origin of the plot
 
  AUTHOR: Giovanni Facchinetti, 2023
  
 '''
-
-
 def plot_planet(planet_name, ax):
     # Define planet properties
     planets = {

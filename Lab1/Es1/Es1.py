@@ -76,7 +76,7 @@ ax1 = fig.add_subplot(2, 3, 1, projection='3d')
 
 # Plot the trajectory
 ax1.plot(r[:, 0], r[:, 1], r[:, 2], 'r', label='Trajectory')
-plot_planet('mars', ax1)
+plot_planet('earth', ax1)
 ax1.axis('equal')
 ax1.legend()
 ax1.set_xlabel('$r_x$ [km]')

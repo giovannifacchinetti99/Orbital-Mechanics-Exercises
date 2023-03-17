@@ -17,7 +17,6 @@ t = np.linspace(t0, k*T, N)
 
 
 # computing the true anomalies
-
 f_vec = np.zeros((N, len(e)))
 for i in np.arange(N):
     for j in np.arange(len(e)):

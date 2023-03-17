@@ -1,18 +1,20 @@
 import numpy as np
 '''
-tbp_ode.py - returns state vector of velocity and acceleration of a point in an orbit in the perturbed 2BP
-
-Prototype: dy = tbp_ode(y, t, muP, Re, j2)
-
-INPUT: y: vector containing the position and the velocity of the point of the orbit     [1x6]    
-       t: instant of time                                                               [1x1]
-       muP:  Planetary constant of the planet (mu = mass * G)                           [1x1]
-       Re: Radius of the Earth                                                          [1x1]
-       j2: Second zonal harmonic of the gravitational perturbation                      [1x1]
-       
-OUTPUT: dy: vector containing velocity and acceleration of the point, to be integrated  [1x6]
-
-AUTHOR: Giovanni Facchinetti, 2023
+    tbp_ode.py - returns state vector of velocity and acceleration of a point in an orbit in the perturbed 2BP
+    
+    Prototype: dy = tbp_ode(y, t, muP, Re, j2)
+    
+    INPUT: 
+           y [1x6] vector containing the position and the velocity of the point of the orbit in cartesian coordinates [km, km/s]       
+           t [1x1] instant of time [s]                                                             
+           muP [1x1]  Planetary constant of the planet [km^3/s^2]                     
+           Re [1x1] Radius of the Earth [km]                                                 
+           j2 [1x1] Second zonal harmonic of the gravitational perturbation [-]                     
+           
+    OUTPUT: 
+            dy: vector containing velocity and acceleration of the point, to be integrated  [1x6]
+    
+    AUTHOR: Giovanni Facchinetti, 2023
 '''
 
 def tbp_ode2(y, t, muP, Re, j2):

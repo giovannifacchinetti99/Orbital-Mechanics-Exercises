@@ -6,7 +6,7 @@ import numpy as np
 
     INPUT: 
             y [1 x 6]  state vector in cartesian coordinates [km, km/s]
-            t [1 x 1]  instant of time   
+            t [1 x 1]  instant of time [s]
             muP [1 x 1] Planetary constant of the planet [km^3/s^2]
        
     OUTPUT: 
@@ -14,7 +14,6 @@ import numpy as np
 
     AUTHOR: Giovanni Facchinetti, 2023
 '''
-
 def tbp_ode(y, t, muP):
 
     # position and velocity

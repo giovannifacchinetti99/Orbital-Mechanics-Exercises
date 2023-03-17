@@ -11,8 +11,7 @@ import numpy as np
             k [1 x 1] revolutions of the satellite before the track repeats itself [-]
             muP [1 x 1] gravitational planetary constant [km^3/s^2]
             wP [1 x 1] rotational velocity of the planet [rad/s]
-            
-
+      
     OUTPUTS
             a [1 x 1] semi-major axis of the orbit [km]
             

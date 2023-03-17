@@ -3,19 +3,20 @@ import scipy as sp
 from scipy.optimize import root
 
 '''
- Kepler_Solver - finds true anomaly f starting from mean anomaly M
- 
- Prototype: f =  Kepler_Solver(t, e, a, muP, f0, t0)
- 
- Input:   time vector(t) [1 x n] [s]
-          eccentricity (e) [-]
-          semi-major axis (a) [km]
-          Standard gravitational parameter (mu) [km^3/s^2]
-          reference initial time and true anomaly (t0) [s]
-          
- Output:  true anomaly (f) [rad]
-
- AUTHOR: Giovanni Facchinetti, 2023
+     Kepler_Solver - finds true anomaly f starting from mean anomaly M
+     
+     Prototype: f =  Kepler_Solver(t, e, a, muP, f0, t0)
+     
+     Input:   t [1 x n] time vector [s]
+              e [1 x 1] eccentricity [-]
+              a [1 x 1] semi-major axis [km]
+              muP [1 x 1] Standard gravitational parameter [km^3/s^2]
+              t0, f0 [1 x 1] reference initial time and true anomaly [s] [rad]
+              
+     Output:  
+              true anomaly [1 x 1] [rad]
+    
+     AUTHOR: Giovanni Facchinetti, 2023
 '''
 
 

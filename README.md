@@ -7,10 +7,10 @@ Simple Python codes solving exercises from the Politecnico di Milano's course Or
 - Computation of ground track under the U2BP and the J22BP.
 
 <p align="center">
-  <img src="https://github.com/giovannifacchinetti99/Orbital-Mechanics-Exercises/blob/main/Lab1/Es2/Es2.png" />
+  <img src="https://github.com/giovannifacchinetti99/Orbital-Mechanics-Exercises/blob/main/Lab2/Es3/Es3.png" />
 </p>
 <p align="center">
-  <em>Figure 1. Results of the exercise 2, from the first laboratory.</em>
+  <em>Figure 1. Results of the exercise 3, from the second laboratory.</em>
 </p>
 
 # Disclaimer

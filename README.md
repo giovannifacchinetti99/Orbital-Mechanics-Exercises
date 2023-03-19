@@ -49,6 +49,66 @@ Example plot:
   <em>Figure 2. Results of exercise 2.</em>
 </p>
 
+## Exercise 3: Kepler's Equation Solver
+
+This is a Python script for solving Kepler's equation, given the eccentricity, the semi-major axis, the time vector and other constants. The script uses the Newton-Raphson method to solve the equation iteratively, until the required accuracy is achieved. The function is called "kepler_solver".
+
+Usage: To use the script, run the Ex3.py file in your Python environment calling the "kepler_solver" function and pass the required inputs. The function will return the true anomaly of the orbit for each time instant and the script will plot a surface like this: 
+
+<p align="center">
+  <img src="https://github.com/giovannifacchinetti99/Orbital-Mechanics-Exercises/blob/main/Lab1/Es3/Es3.png" />
+</p>
+<p align="center">
+  <em>Figure 3. Results of exercise 3.</em>
+</p>
+
+# Laboratory N. 2
+
+## Exercise 1: Ground Track Computation
+
+This is a Python script for computing the ground track of an orbit, given its state at the initial time (either in Cartesian or Keplerian elements).
+
+Usage: To use the script, run the Ex1.py file in your Python environment, calling the "ground_track" function and pass the required inputs. The function will return the longitude and latitude of the projection of the orbit on the Earth (ground track).
+
+Example plot: 
+<p align="center">
+  <img src="https://github.com/giovannifacchinetti99/Orbital-Mechanics-Exercises/blob/main/Lab2/Es1/Es1.png" />
+</p>
+<p align="center">
+  <em>Figure 4. Results of exercise 1.</em>
+</p>
+
+## Exercise 2: Repeating Ground Track
+This is a Python script for computing the required semi-major axis for a repeating ground track orbit, given the number of satellite revolutions and the number of Earth revolutions. The function used is called "repeating_ground_track".
+
+Usage: To use the script, run the Ex2.py file, calling call the "repeating_ground_track" function and pass the required inputs. The function will return the required semi-major axis for the given parameters.
+
+Example plot: 
+<p align="center">
+  <img src="https://github.com/giovannifacchinetti99/Orbital-Mechanics-Exercises/blob/main/Lab2/Es2/Es2.png" />
+</p>
+<p align="center">
+  <em>Figure 5. Results of exercise 2.</em>
+</p>
+
+## Exercise 3: Repeating Ground Track with J2 Perturbations
+This exercise builds upon Exercise 5, but takes into account the J2 perturbations on the orbit propagation and the computation of the required semi-major axis for a repeating ground track.
+
+To incorporate J2 perturbations into the orbit propagation, I substituted the "tbp_ode" function with the "tbp_ode2" function of exercise 2, laboratory 1.
+
+To compute the required semi-major axis for a repeating ground track with J2 perturbations, I modified the RepeatingGroundTrack function from Exercise 5. The modified function is called RepeatingGroundTrackPerturbed and takes into account the J2 perturbations in the computation of the longitude of the ascending node and the argument of perigee.
+
+Usage: To use the modified function, run the Ex3.py file in your Python environment. The script will compute the required semi-major axis for a repeating ground track with J2 perturbations and plot the resulting ground track.
+
+Example plot:
+
+<p align="center">
+  <img src="https://github.com/giovannifacchinetti99/Orbital-Mechanics-Exercises/blob/main/Lab2/Ex6/Ex6.png" />
+</p>
+<p align="center">
+  <em>Figure 6. Results of exercise 3.</em>
+</p>
+
 # Disclaimer
 ```diff
 - This code has been developed for personal research purposes and it should not be used for replacing anything.

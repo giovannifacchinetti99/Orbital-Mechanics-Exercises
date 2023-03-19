@@ -103,7 +103,7 @@ Usage: To use the modified function, run the Ex3.py file in your Python environm
 Example plot:
 
 <p align="center">
-  <img src="https://github.com/giovannifacchinetti99/Orbital-Mechanics-Exercises/blob/main/Lab2/Ex6/Ex6.png" />
+  <img src="https://github.com/giovannifacchinetti99/Orbital-Mechanics-Exercises/blob/main/Lab2/Es3/Es3.png" />
 </p>
 <p align="center">
   <em>Figure 6. Results of exercise 3.</em>

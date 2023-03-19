@@ -20,7 +20,7 @@ r0_norm = np.linalg.norm(r0)  # [km]
 # time
 a = 1 / (2 / r0_norm - np.dot(v0, v0) / muP)  # semi-major axis [km]
 T = 2 * np.pi * np.sqrt((a ** 3) / muP)  # Period of the orbit [s]
-t = np.linspace(0, n*T, 1000)
+t = np.linspace(0, n*T, 100000)
 
 # integration
 options = {'rtol': 1e-13, 'atol': 1e-13}
@@ -79,9 +79,9 @@ ax1.plot(r[:, 0], r[:, 1], r[:, 2], 'r', label='Trajectory')
 plot_planet('earth', ax1)
 ax1.axis('equal')
 ax1.legend()
-ax1.set_xlabel('$r_x$ [km]')
-ax1.set_ylabel('$r_y$ [km]')
-ax1.set_zlabel('$r_z$ [km]')
+ax1.set_xlabel('$r_x$ [$10^3$ km]')
+ax1.set_ylabel('$r_y$ [$10^3$ km]')
+ax1.set_zlabel('$r_z$ [$10^3$ km]')
 ax1.set_title('Orbit of spacecraft')
 ax1.grid()
 ax1.ticklabel_format(axis='both', style='sci', scilimits=(0, 0))  # set scientific notation
